@@ -1,0 +1,102 @@
+:root {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_container {
+  width: 70vw;
+  height: 70vh;
+  margin: 5em 0 0 0;
+  border-radius: 8px;
+  background-color: #e6ebf7;
+  //   border: 3px solid red;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product_card {
+  width: 36vw;
+  height: 55vh;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  border-radius: 2em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+
+  // column-gap: 2em;
+
+  #pname {
+    //   margin: 2em 0;
+    font-weight: 800;
+    color: rgb(44, 44, 44);
+  }
+  #pdesc {
+    color: rgb(83, 83, 83);
+  }
+
+  .flags {
+    // border: 1px solid rgb(100, 81, 51);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .pqty {
+      width: 6vw;
+      height: 100%;
+      //   border: 1px solid rgb(100, 81, 51);
+    }
+    #head {
+      font-weight: 500;
+      color: rgb(77, 77, 77);
+      margin: 2px 0 0 0;
+    }
+    // #head1{
+    //     font-weight: 500;
+    //     color: rgb(77, 77, 77);
+    //     margin: 2px 0 0 0;
+    // }
+    #head2 {
+      font-weight: 500;
+      color: rgb(77, 77, 77);
+      margin: 2px 0 0 0;
+    }
+    #value {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-top: 10px;
+      color: rgb(1, 1, 15);
+    }
+  }
+
+  .img {
+    // border: 1px solid red;
+    margin: 2em 1em;
+    border-radius: 1em;
+  }
+  .text {
+    margin: 2em 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+  }
+}
+.actions_bar {
+  width: 50%;
+  text-align: right;
+  // border: 1px solid rgb(189, 212, 54);
+  .zmdi{
+    margin: .1em .2em .1em 2em;
+    color: #534737;
+  }
+}

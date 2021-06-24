@@ -1,0 +1,15 @@
+{
+  "name": "inventorymgt",
+  "version": "1.0.0",
+  "description": "Invenotry management app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sass": "node-sass -w assets/styles/scss/ -o assets/styles/css/ --recursive"
+  },
+  "author": "agbeko",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
