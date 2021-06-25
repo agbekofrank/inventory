@@ -1,3 +1,10 @@
+// import { items } from "../data/items.js";
+// let existingItems;
+// if(localStorage.getItem("items")) {
+//   existingItems = JSON.parse(localStorage.getItem("items"));
+// } else {
+//   existingItems = items;
+// }
 let items = JSON.parse(localStorage.getItem("items"));
 var existingItems = JSON.parse(localStorage.getItem("items"));
 
