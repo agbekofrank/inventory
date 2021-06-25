@@ -2,6 +2,7 @@ let items = JSON.parse(localStorage.getItem("items"));
 var existingItems = JSON.parse(localStorage.getItem("items"));
 
 let total = 0;
+let categories = new Set();
 let col;
 
 let itemDetailId;
@@ -17,6 +18,7 @@ function displayItems(items) {
   for (let i = 0; i < items.length; i++) {
     let object = items[i];
     total += parseInt(object.quantity);
+    categories.add(object.category);
     let row = document.createElement("div");
 
     createRowChildren(object, row);
@@ -28,7 +30,9 @@ function displayItems(items) {
       location.href = "../pages/detail.html";
     };
     document.getElementById("total").textContent = total;
+    document.getElementById("totalCat").textContent = categories.size;
   }
+  console.log(categories);
 }
 function createRowChildren(object, element) {
   for (const prop in object) {

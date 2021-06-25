@@ -15,7 +15,7 @@
   //   border: 3px solid red;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -79,8 +79,15 @@
 
   .img {
     // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2em 1em;
     border-radius: 1em;
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
   }
   .text {
     margin: 2em 1em;
@@ -92,11 +99,14 @@
   }
 }
 .actions_bar {
-  width: 50%;
-  text-align: right;
+  margin: 0 0 0 0em;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+
   // border: 1px solid rgb(189, 212, 54);
   .zmdi{
-    margin: .1em .2em .1em 2em;
-    color: #534737;
+    margin: 1em;
+    color: #c36f00;
   }
 }

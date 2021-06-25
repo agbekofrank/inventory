@@ -17,14 +17,21 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  form select, form input {
+  form select,
+  form input {
     width: 40%;
     margin-bottom: 5%;
     height: 3.5em;
     border-radius: 1em; }
-  form button {
-    height: 3.0em;
-    width: 5em; }
+  form .addButtons {
+    width: 20em;
+    display: flex;
+    justify-content: space-around; }
+    form .addButtons button {
+      height: 3em;
+      width: 5em;
+      border-radius: 5px;
+      border: 2px solid white; }
 
 .zmdi {
   cursor: pointer; }

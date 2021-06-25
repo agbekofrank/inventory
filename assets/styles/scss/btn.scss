@@ -1,39 +1,46 @@
+.addItemContainer {
+  width: 99vw;
+  height: 100vh;
+  // border: 2px solid red;
 
-.addItemContainer{
-    width: 99vw;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addItemForm {
+  width: 50vw;
+  height: 60vh;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  select,
+  input {
+    width: 40%;
+    margin-bottom: 5%;
+    height: 3.5em;
+    border-radius: 1em;
+  }
+  .addButtons {
     // border: 2px solid red;
-
+    width: 20em;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.addItemForm{
-    width: 50vw;
-    height: 60vh;
-    // border: 2px solid red;
-}
-form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    select, input{
-        width: 40%;
-        margin-bottom: 5%;
-        height: 3.5em;
-        border-radius: 1em;
+    justify-content: space-around;
+    button {
+      height: 3em;
+      width: 5em;
+      border-radius: 5px;
+      border: 2px solid white;
     }
-    button{
-        height: 3.0em;
-        width: 5em;
-    }
+  }
 }
-.zmdi{
-    cursor: pointer;
+.zmdi {
+  cursor: pointer;
 }

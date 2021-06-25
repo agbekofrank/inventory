@@ -90,8 +90,3 @@ function edit() {
     location.href = "../index.html";
   });
 }
-
-function addCategory() {
-  
-  
-}

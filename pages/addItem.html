@@ -22,7 +22,13 @@
       ></i>
       <div class="addItemForm">
         <form onsubmit="return false">
-          <input type="text" name="name" id="name" placeholder="Item name"  required/>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Item name"
+            required
+          />
           <input
             type="text"
             name="description"
@@ -47,12 +53,13 @@
             required
             placeholder="Item quantity"
           />
-          <button type="submit" id="submit">add</button>
-          <button type="submit" id="update">update</button>
+          <div class="addButtons">
+            <button type="submit" id="submit">add</button>
+            <button type="submit" id="update">update</button>
+          </div>
         </form>
       </div>
     </div>
-    <!-- <script src="../assets/scripts/draggableBtn.js"></script> -->
     <script src="../assets/scripts/index.js"></script>
     <script src="../assets/scripts/addItem.js"></script>
   </body>

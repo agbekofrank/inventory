@@ -1,4 +1,5 @@
 let objID = JSON.parse(localStorage.getItem("objID"));
+let rand = Math.ceil(Math.random()*12);
 if (objID) {
   let itemDetailId = JSON.parse(localStorage.getItem("objID"));
 
@@ -40,4 +41,5 @@ if (objID) {
       }
     }
   });
+  document.getElementById('img1').setAttribute('src', `../assets/img/${rand}.jpg`);
 }
